@@ -1,0 +1,217 @@
+@import url("../index.css");
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+.nav-bar-2 {
+  top: 0;
+  z-index: 1000;
+  height: 15vh;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 2px rgba(117, 217, 235, 0.1);
+  margin-bottom: 2vh;
+}
+
+.logo-1 {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+/* LOGO  */
+.navbar-brand {
+  font-family: "Oswald";
+  color: var(--primary-color) !important;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* NAVIGATION LINKS */
+.nav-link {
+  margin-left: 4rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-2) !important;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+#nav-links:hover {
+  filter: drop-shadow(0 0 4rem #646cffaa) !important;
+  color: var(--primary-color) !important;
+}
+
+/* HAMBURGER ICON CSS */
+.navbar-toggler {
+  border: none !important;
+}
+
+.hamburger-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-menu {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-links {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ext-links {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-links a {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-2);
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+#nav-links:hover {
+  filter: drop-shadow(0 0 2em #646cffaa) !important;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+  filter: drop-shadow(0 0 2em #646cffaa) !important;
+}
+
+.nav-links a h4 {
+  font-weight: normal;
+}
+
+.pipe {
+  color: var(--color-2);
+  rotate: 90deg;
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin-left: 4rem;
+}
+
+.ext-icons {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  transition: ease-in-out 0.3s;
+}
+
+.ext-icons:hover {
+  color: var(--color-2);
+}
+
+/* BOOTSTRAP NAVBAR */
+.nav-container {
+  width: 100%;
+}
+
+.header-links {
+  align-items: center;
+}
+
+.offcanvas-header {
+  background-color: rgba(31, 31, 31, 0.9);
+}
+
+/* DOWNLOAD RESUME BUTTON IN OFFCANVAS */
+.offcanvas-header .close-button {
+  color: var(--color-2) !important;
+}
+
+.offcanvas-title Button {
+  background-color: var(--primary-color);
+  border-radius: 1.2rem;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  transition: ease-in-out 0.5s;
+}
+
+.offcanvas-title Button:hover {
+  background-color: transparent;
+  border: 1px solid;
+  border-color: var(--primary-color);
+  filter: drop-shadow(0 0 1em #64f7ff40);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+/* RESPONSIDE NAVBAR */
+@media (max-width: 990px) {
+  .offcanvas-body {
+    background-color: rgba(31, 31, 31, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .pipe {
+    display: none;
+  }
+
+  .header-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start !important;
+    min-width: 50%;
+  }
+
+  #nav-links {
+    width: 100%;
+    margin: 0;
+    margin-left: 15%;
+    margin-bottom: 10px;
+  }
+
+  .bar {
+    height: 2px;
+    background: var(--color-2);
+    width: 90%;
+    border-radius: 3px;
+    margin-left: 12%;
+    margin: 10px;
+  }
+
+  .social-links {
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .social-links .nav-link {
+    margin: 0;
+    margin-right: 30px;
+    min-width: 25%;
+  }
+}
