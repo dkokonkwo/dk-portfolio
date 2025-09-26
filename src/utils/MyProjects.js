@@ -1,9 +1,9 @@
-import triviaUrl from "../assets/images/triviatwo.png";
 import wpmUrl from "../assets/images/fee-gen-img.png";
-import dnaUrl from "../assets/images/dna-farm.png";
 import bodfitUrl from "../assets/images/bodfit.png";
 import embyUrl from "../assets/images/emby.jpg";
 import bulbUrl from "../assets/images/bulb.png";
+import farmulan from "../assets/images/farmulan.png";
+import quizzler from "../assets/images/quizzler.png";
 
 export const MyProjects = [
   {
@@ -19,21 +19,21 @@ export const MyProjects = [
   {
     id: 2,
     tags: ["web", "emb", "all"],
-    title: "Digital Nourish Africa",
-    imageUrl: dnaUrl,
+    title: "FarMulan",
+    imageUrl: farmulan,
     description:
-      "The web application serves as a centralized hub for farmers, providing them with local weather updates, water requirements, and soil conditions data for various crops. It empowers farmers to make informed decisions on planting, irrigating, and harvesting, optimizing resource usage and minimizing the impact of climate change on traditional farming calendars.",
-    extLink: "https://digitalnourishafrica.netlify.app/",
+      "The Real-Time Smart Irrigation Scheduler is an IoT-driven system that automates crop-specific watering using ET₀ calculations, crop growth coefficients, soil-moisture sensors, and weather forecasts. I designed the full stack, including a custom PCB and NodeMCU firmware for sensor-actuated valves, a Firebase backend for schedule computation, and a Flutter mobile app with Hive for offline sync. Field tests on lettuce and tomato showed 10–35% yield gains, ~60% labor reduction, and 35–60% water savings.",
+    extLink: "",
   },
 
   {
     id: 3,
     tags: ["web", "all"],
-    title: "TriviaGeo",
-    imageUrl: triviaUrl,
+    title: "Quizzler",
+    imageUrl: quizzler,
     description:
-      "TriviaGeo is a web application trivia game testing player's general geography knowledge. Built on React framework, TriviaGeo is powered by Trivia DB's API.",
-    extLink: "https://dkokonkwo.github.io/trivia-geo/",
+      "Quizzler is a React-based trivia web game that lets users choose categories and difficulty levels, with difficulty controlling the number of lives. It integrates the TriviaDB API to fetch randomized questions, manages complex game state for smooth play, and provides scoring, timers, and end-of-game summaries. The app also supports accessibility, responsive design, and persistent high scores for replayability.",
+    extLink: "https://dkokonkwo.github.io/quizzler/",
   },
 
   {
