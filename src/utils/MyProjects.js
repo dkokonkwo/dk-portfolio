@@ -18,7 +18,7 @@ export const MyProjects = [
 
   {
     id: 2,
-    tags: ["web", "emb", "all"],
+    tags: ["mobile", "emb", "all"],
     title: "FarMulan",
     imageUrl: farmulan,
     description:
