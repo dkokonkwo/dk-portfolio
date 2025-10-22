@@ -18,7 +18,7 @@ function Home() {
             <h3>MY PROJECTS</h3>
           </a>
           <a
-            href="/public/resume.pdf"
+            href="/public/new-resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             download="resume.pdf"

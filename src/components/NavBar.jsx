@@ -49,7 +49,7 @@ function NavBar() {
           <Offcanvas.Header closeButton closeVariant="white">
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
               <a
-                href="/public/resume.pdf"
+                href="/public/new-resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 download="resume.pdf"
